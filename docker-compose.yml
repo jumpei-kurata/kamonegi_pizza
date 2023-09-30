@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  core:
+    container_name: kamonegi_api_dev
+    #image: node:20.7.0
+    build: .
+    tty: true
+    ports:
+      - 3000:3000
+    volumes:
+      - ./src:/src
