@@ -13,5 +13,10 @@
 type NumberCardType = {
   number: number;
   isFaceUp: boolean;
-  owner: number;
+  owner: number | null;
 };
+
+
+
+export default NumberCardType;
+exports.NumberCardType = NumberCardType;
