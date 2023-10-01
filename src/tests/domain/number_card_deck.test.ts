@@ -6,3 +6,5 @@ test("番号カードの山札を作成でき,100枚のカードが含まれる"
   expect(deck).not.toBeNull();
   expect(deck.cards.length).toBe(100);
 });
+
+export {}
