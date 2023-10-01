@@ -1,18 +1,12 @@
 // import NumberCardType from "domain/number_card";
-const NumberCardType = require('domain/number_card');
+const NumberCardType = require('./number_card');
 
-interface INumberCardDeck {
-  cards: NumberCardType[] | [];
-  constructor: () => void;
-  shuffle: () => void;
-};
-
-class NumberCardDeck {;
-  cards: NumberCardType[] = [];
+class NumberCardDeck {
+  cards: typeof NumberCardType[] = [];
 
   constructor() {
     for (let i = 1; i <= 100; i++) {
-      const card: NumberCardType = {
+      const card = {
         number: i,
         isFaceUp: false,
         owner: null

@@ -16,7 +16,4 @@ type NumberCardType = {
   owner: number | null;
 };
 
-
-
-export default NumberCardType;
 exports.NumberCardType = NumberCardType;
